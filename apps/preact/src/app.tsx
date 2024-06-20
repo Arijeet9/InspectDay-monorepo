@@ -1,5 +1,7 @@
-// import { TamaguiProvider, createTamagui } from 'tamagui'
-// import { config } from '@tamagui/config/v3'
+import '@tamagui/core/reset.css'
+import '@tamagui/font-inter/css/400.css'
+import '@tamagui/font-inter/css/700.css'
+import '@tamagui/polyfill-dev'
 
 import { Provider } from 'app/provider'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
@@ -11,15 +13,7 @@ import Library from './pages/Library'
 import Organization from './pages/Organization'
 import Error from './pages/Error'
 
-// you usually export this from a tamagui.config.ts file
-// const tamaguiConfig = createTamagui(config)
 
-// make TypeScript type everything based on your config
-// type Conf = typeof tamaguiConfig
-// declare module '@tamagui/core' {
-//   // or 'tamagui'
-//   interface TamaguiCustomConfig extends Conf {}
-// }
 
 export function App() {
   return (
