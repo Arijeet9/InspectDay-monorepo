@@ -6,7 +6,7 @@ import {
   Separator,
   Sheet,
   useToastController,
-  SwitchThemeButton,
+  // SwitchThemeButton,
   SwitchRouterButton,
   XStack,
   YStack,
@@ -14,9 +14,9 @@ import {
 import { ChevronDown, ChevronUp, X } from '@tamagui/lucide-icons'
 import { useState } from 'react'
 import { Platform } from 'react-native'
-import { useLink } from 'solito/navigation'
-import { useLinkProps } from '@react-navigation/native'
-
+// import { useLink } from 'solito/navigation'
+// import { useLinkProps } from '@react-navigation/native'
+import { Link } from 'react-router-dom'
 
 export function HomeScreen({ pagesMode = false }: { pagesMode?: boolean }) {
   const linkTarget = pagesMode ? '/pages-example-user' : '/user'
@@ -38,7 +38,7 @@ export function HomeScreen({ pagesMode = false }: { pagesMode?: boolean }) {
         {Platform.OS === 'web' && (
           <>
             <SwitchRouterButton pagesMode={pagesMode} />
-            <SwitchThemeButton />
+            {/* <SwitchThemeButton /> */}
           </>
         )}
       </XStack>
@@ -57,7 +57,10 @@ export function HomeScreen({ pagesMode = false }: { pagesMode?: boolean }) {
         <Separator />
       </YStack>
 
-      <Button {...linkProps}>Link to user</Button>
+      {/* <Button {...linkProps}>Link to user</Button> */}
+      <Link to={`${linkTarget}/nate`}>
+        <Button>Link to user</Button>
+      </Link>
 
       <SheetDemo />
     </YStack>

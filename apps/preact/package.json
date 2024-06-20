@@ -15,6 +15,7 @@
     "@types/react-dom": "^18.3.0",
     "preact": "^10.19.6",
     "preact-compat": "^3.19.0",
+    "react-router-dom": "^6.23.1",
     "tamagui": "^1.100.6"
   },
   "devDependencies": {
