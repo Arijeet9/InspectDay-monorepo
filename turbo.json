@@ -1,0 +1,15 @@
+{
+  "$schema": "https://turborepo.org/schema.json",
+  "globalEnv": ["DISABLE_EXTRACTION", "NODE_ENV", "EAS_BUILD_PLATFORM"],
+  "pipeline": {
+    "build": {
+      "env": ["DISABLE_EXTRACTION", "NODE_ENV", "EAS_BUILD_PLATFORM"],
+      "dependsOn": ["^build"],
+      "outputs": [ "build/**", "node_modules/.cache/metro/**","node_modules/.cache/vite/**"]
+    },
+    "dev": {
+      "cache": false,
+      "persistent": true
+    }
+  }
+}

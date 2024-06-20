@@ -1,0 +1,25 @@
+{
+  "name": "preact",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "cd ../.. && yarn build && cd apps/preact && tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@tamagui/config": "^1.100.6",
+    "@tamagui/vite-plugin": "^1.101.0",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "preact": "^10.19.6",
+    "preact-compat": "^3.19.0",
+    "tamagui": "^1.100.6"
+  },
+  "devDependencies": {
+    "@preact/preset-vite": "^2.8.2",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0"
+  }
+}
