@@ -7940,7 +7940,7 @@ __metadata:
     react-native-screens: "npm:~3.31.1"
     react-native-svg: "npm:15.3.0"
     react-native-web: "npm:~0.19.12"
-    typescript: "npm:^5.4.5"
+    typescript: "npm:^5.2.2"
   languageName: unknown
   linkType: soft
 
@@ -13408,7 +13408,7 @@ __metadata:
     node-gyp: "npm:^10.1.0"
     prettier: "npm:^3.2.5"
     turbo: "npm:^1.13.3"
-    typescript: "npm:^5.4.5"
+    typescript: "npm:^5.2.2"
   languageName: unknown
   linkType: soft
 
@@ -14167,7 +14167,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:^5.2.2, typescript@npm:^5.4.5":
+"typescript@npm:^5.2.2":
   version: 5.4.5
   resolution: "typescript@npm:5.4.5"
   bin:
@@ -14177,7 +14177,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@npm%3A^5.2.2#optional!builtin<compat/typescript>, typescript@patch:typescript@npm%3A^5.4.5#optional!builtin<compat/typescript>":
+"typescript@patch:typescript@npm%3A^5.2.2#optional!builtin<compat/typescript>":
   version: 5.4.5
   resolution: "typescript@patch:typescript@npm%3A5.4.5#optional!builtin<compat/typescript>::version=5.4.5&hash=d69c25"
   bin:
