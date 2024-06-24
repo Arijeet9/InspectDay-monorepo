@@ -12,22 +12,22 @@ import Leads from './pages/Leads'
 import Library from './pages/Library'
 import Organization from './pages/Organization'
 import Error from './pages/Error'
-
+import HomeLayout from './layouts/HomeLayout'
 
 export function App() {
-  
   return (
     <>
-      <Provider disableRootThemeClass defaultTheme={'light'}>
+      <Provider disableRootThemeClass>
         <Router>
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<HomeLayout />}>
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/inspection" element={<Inspection />} />
             <Route path="/leads" element={<Leads />} />
             <Route path="/library" element={<Library />} />
             <Route path="/organization" element={<Organization />} />
             <Route path="*" element={<Error />} />
+            </Route>
           </Routes>
         </Router>
       </Provider>
