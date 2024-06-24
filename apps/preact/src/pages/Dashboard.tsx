@@ -7,6 +7,8 @@ import {
 
 import OverviewHeaderCard from '../components/dashboard/cards/OverviewHeaderCard'
 import DoughnutChart from "../components/dashboard/charts/DoughnutChart"
+import UpcomingInspectionTable from '../components/dashboard/tables/upcoming_inspection_table/UpcomingInspectionTable'
+import PerformanceTable from '../components/dashboard/tables/performance_table/PerformanceTable'
 
 const Dashboard = () => {
   return (
@@ -26,6 +28,10 @@ const Dashboard = () => {
             title="Inspector Availability Chart"
             data={doughnutInspectorAvailabilityData}
           />
+        </XStack>
+        <XStack>
+          <UpcomingInspectionTable />
+          <PerformanceTable />
         </XStack>
       </YStack>
     </>
