@@ -57,7 +57,7 @@ const CustomButton = styled(Button, {
   },
 });
 
-const Sidebar = () => {
+export function Sidebar () {
   const [organizationDropdown, setOrganizationDropdown] = useState(false);
   const [libraryDropdown, setLibraryDropdown] = useState(false);
   return (
@@ -157,4 +157,3 @@ const Sidebar = () => {
   );
 };
 
-export default Sidebar;

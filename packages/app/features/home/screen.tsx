@@ -6,8 +6,7 @@ import {
   Separator,
   Sheet,
   useToastController,
-  // SwitchThemeButton,
-  // SwitchRouterButton,
+  SwitchThemeButton,
   XStack,
   YStack,
 } from '@my/ui'
@@ -35,12 +34,13 @@ export function HomeScreen({ pagesMode = false }: { pagesMode?: boolean }) {
         fw="wrap"
         $sm={{ pos: 'relative', t: 0 }}
       >
-        {/* {Platform.OS === 'web' && (
+        {Platform.OS === 'web' && (
           <>
-            <SwitchRouterButton pagesMode={pagesMode} />
             <SwitchThemeButton />
           </>
-        )} */}
+        )}
+
+
       </XStack>
 
       <YStack gap="$4">

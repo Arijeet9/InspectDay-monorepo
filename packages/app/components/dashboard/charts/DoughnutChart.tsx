@@ -1,17 +1,20 @@
 import { Doughnut } from "react-chartjs-2";
 import { Chart as ChartJS, Tooltip, Legend, ArcElement } from "chart.js";
-import { DoughnutDataTypes } from "../../../types/types";
-import { Text, YStack } from "tamagui";
+import { DoughnutDataTypes } from "app/types/types";
+import { Text, YStack,useMedia } from "tamagui";
 
 ChartJS.register(Tooltip, Legend, ArcElement);
 
-const DoughnutChart = ({
+export function DoughnutChart ({
   title,
   data,
 }: {
   title: string;
   data: DoughnutDataTypes;
-}) => {
+}) {
+
+  const media=useMedia()
+
 
   // filtering empty string labels from legend
   const filteredLabels = data.labels.filter((label) => label !== "");
@@ -31,11 +34,12 @@ const DoughnutChart = ({
     cutout: "75%", // to adjust the size of the center hole
   };
 
+
   return (
     <>
       <YStack
         p="$4"
-        w="36vw"
+        w={media.sm?"100%":"34vw"}
         maxHeight="45vh"
         borderWidth={1}
         borderColor="#DDE1E6"
@@ -49,4 +53,3 @@ const DoughnutChart = ({
   );
 };
 
-export default DoughnutChart;

@@ -1,29 +1,31 @@
 import { TrendingUp } from "@tamagui/lucide-icons";
-import { Card, XStack, Text } from "tamagui";
-import { OverviewHeaderTypes } from "../../../types/types";
+import { OverviewHeaderTypes } from "app/types/types";
+import { Card, XStack, Text,useMedia } from "tamagui";
 
-const OverviewHeaderCard = ({
+export function OverviewHeaderCard ({
   overviewHeaderData,
 }: {
   overviewHeaderData: OverviewHeaderTypes;
-}) => {
+}) {
+
+  const media=useMedia()
   return (
     <>
       <Card
         p="$3"
-        maxWidth="18vw"
         w="100%"
+        maxWidth={media.sm ? "100%" : "17vw"}
         borderWidth={1}
         borderColor="#E5E7EB"
         bc="#FFFFFF"
       >
-        <Card.Header p="0">
+        <Card.Header p={0}>
           <XStack ai="center" gap="$4" >
-            <Text col="#343434" fontSize="$2">{overviewHeaderData.title}</Text>
+            <Text col="#343434" fontSize={media.sm?"$2":"1vw"}>{overviewHeaderData.title}</Text>
             {overviewHeaderData.rate && (
-              <XStack p="$2" bc="#23C10A26" br="$12" ai="center" gap="$2">
+              <XStack p="$2" bc="#23C10A26" br="$12" ai="center" gap="1vw">
                 <TrendingUp size="$1" col="#0B8A00" />
-                <Text col="#0B8A00" fontSize="$2">{overviewHeaderData.rate}</Text>
+                <Text col="#0B8A00" fontSize={media.sm?"$2":"1vw"}>{overviewHeaderData.rate}</Text>
               </XStack>
             )}
           </XStack>
@@ -36,4 +38,3 @@ const OverviewHeaderCard = ({
   );
 };
 
-export default OverviewHeaderCard;

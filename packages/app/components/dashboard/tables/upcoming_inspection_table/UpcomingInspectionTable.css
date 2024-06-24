@@ -1,4 +1,4 @@
-.performance-table {
+.upcoming-inspection-table {
     padding: 1vw;
     border: 1px solid #E5E7EB;
     border-radius: 10px;
@@ -6,43 +6,20 @@
     flex-direction: column;
     gap: 1vw;
     width: 100%;
-    max-height: 60vh;
-    overflow: scroll;
     font-size: 1vw;
-    white-space: nowrap;
   }
   
-  .performance-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  .upcoming-inspection-header {
     font-size: 1.3vw;
-  }
-  
-  .performance-colors {
-    display: flex;
-    align-items: center;
-    font-size: 0.9vw;
-  }
-  
-  .color-indicator {
-    display: flex;
-    align-items: center;
-    margin-right: 10px;
-    color:#1F2937;
-  }
-  
-  .color-circle {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    margin-right: 5px;
+    color:#010101;
   }
   
   .table-container {
     width: 100%;
     border-radius: 10px;
     border: 1px solid #E5E7EB;
+    max-height: 60vh;
+    overflow:scroll;
   }
   
   .table {
@@ -85,6 +62,8 @@
     opacity: 1;
     color: #1F2937;
   }
+
+
   
   .table-row {
     border-bottom: 1px solid #E5E7EB;
@@ -104,19 +83,6 @@
   .inspector-img {
     width: 30px;
     height: 30px;
-    border-radius: 50%;
-    margin-right: 10px;
-  }
-  
-  .performance-cell {
-    display: flex;
-    align-items: center;
-    white-space: nowrap;
-  }
-  
-  .performance-circle {
-    width: 10px;
-    height: 10px;
     border-radius: 50%;
     margin-right: 10px;
   }

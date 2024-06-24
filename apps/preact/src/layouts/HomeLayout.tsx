@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
-import Sidebar from "../components/Sidebar";
 import { View, XStack } from "tamagui";
+import {Sidebar} from "app/components/Sidebar";
 
 
 
