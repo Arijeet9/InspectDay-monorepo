@@ -7,15 +7,15 @@ import {
   Sheet,
   useToastController,
   // SwitchThemeButton,
-  SwitchRouterButton,
+  // SwitchRouterButton,
   XStack,
   YStack,
 } from '@my/ui'
 import { ChevronDown, ChevronUp, X } from '@tamagui/lucide-icons'
 import { useState } from 'react'
 import { Platform } from 'react-native'
-// import { useLink } from 'solito/navigation'
 import { useLinkProps } from '@react-navigation/native'
+
 // import { Link } from 'react-router-dom'
 
 export function HomeScreen({ pagesMode = false }: { pagesMode?: boolean }) {
@@ -35,12 +35,12 @@ export function HomeScreen({ pagesMode = false }: { pagesMode?: boolean }) {
         fw="wrap"
         $sm={{ pos: 'relative', t: 0 }}
       >
-        {Platform.OS === 'web' && (
+        {/* {Platform.OS === 'web' && (
           <>
             <SwitchRouterButton pagesMode={pagesMode} />
-            {/* <SwitchThemeButton /> */}
+            <SwitchThemeButton />
           </>
-        )}
+        )} */}
       </XStack>
 
       <YStack gap="$4">

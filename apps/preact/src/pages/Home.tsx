@@ -1,14 +1,13 @@
 
 import { HomeScreen } from "app/features/home/screen";
-
+import Sidebar from "../components/Sidebar";
 
 const Home=()=>{
 
     return(
         <>
-            <div>
-            <HomeScreen />
-            </div>
+            <Sidebar />
+            {/* <HomeScreen /> */}
         </>
     )
 }
