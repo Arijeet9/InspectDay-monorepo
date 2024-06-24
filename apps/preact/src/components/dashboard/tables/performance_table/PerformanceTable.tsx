@@ -80,7 +80,7 @@ const PerformanceTable = () => {
   return (
     <div className="performance-table">
       <div className="performance-header">
-        <div>Performance</div>
+        <div style={{color:"#010101"}}>Performance</div>
         <div className="performance-colors">
           {Object.entries(performanceColors).map(([key, color], index) => (
             <div key={index} className="color-indicator">
